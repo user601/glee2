@@ -300,6 +300,184 @@ margin-top: 70px;
 }
 
 
+  .description{
+    &__container--long{
+      background-color:#fef7f0;
+      margin-bottom: 70px;
+    }
+    
+    
+    &__items{
+      display: flex;
+      justify-content: space-between;}
+       
+     
+   
+      
+    
+    &__item {
+      display: flex;
+      justify-content: center;
+      padding: 48px;
+      width: 100%;
+      font-family: "DM Sans", sans-serif;
+      font-weight: 400;}
+      &__info {
+        padding-left: 80px;
+        max-width: 306px;
+        background-position: top left;
+        background-repeat: no-repeat;
+    }
+    &__info {
+      padding-left: 80px;
+      max-width: 306px;
+      background-position: top left;
+      background-repeat: no-repeat;
+    
 
+   
+  }
+  }
+  
+    .description__info--support{
+      background-image: url(../images/description/support.svg);
+      background-repeat: no-repeat;
+     }
+     .description__info--dilevery{
+       background-image: url(../images/description/dilevery.svg);
+       background-repeat: no-repeat;
+     }
+    .description__info--pay{
+     background-image: url(../images/description/card.svg);
+     background-repeat: no-repeat;
+    }
+  
+    
+    .products-info{
+      padding-top: 75px 0;
+      &__container{
+        max-width: 1200px;
+      }
+    }
 
+    .product-nav{
+    
+      display: flex;
+      justify-content: center;
+      &__item {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+    &__button{
+      border: none;
+      background-color: transparent;
+      font-size: 16px;
+      color: #8b8b8b;
+      margin-top: 38px;
+      margin-bottom: 80px;
+      &:hover{
+        transition: color 0.5s;
+        color: #1f2044;
+      }
+    }
+   }
+  
+   .product__items{
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 145px;
+     margin: 0 -15px;
+     
+     background-color: #fbfbfb;
+     
+    }
+
+     .product-card{
+       background-color: #ffff;
+      margin: 0 15px 40px;
+      width: calc(100% / 4 - 30px);
+      height: 380px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+      overflow: hidden;
+      &__title{
+       color:$title;
+       font-size: 16px;
+       line-height: 40px;
+       margin-bottom: 15px;
+      }
+     &__price{
+       color:$buttons;
+       padding-bottom:38px ;
+     }
+      &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+         padding: 27px 15px 35px;
+         height: 100%;
+      }
+     
+     &__links{
+       position: absolute;
+       display:flex;
+       bottom:152px;
+       transition: all .3s;
+       transform: translateX(300%);
+      
+       
+       
+       }
+     &__like, &__shopping, &__search{
+       border:none;
+       border-radius:50%;
+       background-color: #fff;
+       width: 45px;
+       height: 45px;
+       display: flex;
+       align-items: center;
+       justify-content: center;&:hover{
+       background-color: $buttons;
+       transition:all .5s;
+       }
+     }
+       
+     
+     &__search,&__shopping{
+      margin-right: 15px;
+     }
+     &__search:hover{
+       path{
+          fill: #ffff;
+        }
+      }
+        &__shopping:hover{
+      
+          path{
+            fill: #fff;
+          }
+     }
+      &__like:hover{
+      
+        path{
+          fill: #fff;
+          
+        }
+      }
+      &:hover{
+      .product-card__links{
+        transform: translateX(0);
+        
+      }
+      }
+    }
+    
+    
+  
+     
+  
 @import 'media';

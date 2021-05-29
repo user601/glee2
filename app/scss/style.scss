@@ -386,7 +386,7 @@ margin-top: 70px;
    .product__items{
      display: flex;
      flex-wrap: wrap;
-     margin-bottom: 145px;
+     bottom: 185px;
      margin: 0 -15px;
      
      background-color: #fbfbfb;
@@ -475,6 +475,72 @@ margin-top: 70px;
       }
       }
     }
+   
+      .illuminators__items{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 180px;
+        
+      }
+      .illuminators__item{
+        max-width: 870px;
+        padding: 97px 100px 87px 130px;
+        width: 100%;
+        background-color: rgba(252,215,182,.4);
+        &-title{
+          font-size: 26px;
+          color:$title;
+          line-height: 32px;
+          margin-bottom: 32px;
+         }
+       &-text{
+        @extend %Rubik-400;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 35px;
+       }
+       &--link{
+         padding: 20px 20px 25px 20px;
+         border: 1px solid #b3b7b5 ;
+         border-radius: 5%;
+         margin-bottom: 98px;&:hover{
+         background-color: $buttons;
+         transition:all .3s;
+          }
+       }
+       &-span{
+         color:$accent;
+         padding-right: 45px;
+         &:hover{
+          color:#ffff;
+          transition:all .3s;
+           }
+       }
+      }
+      .illuminators__content{
+        position: relative;
+        padding-left: 255px;
+        
+       
+      }
+      
+      .illuminators__image{
+        position: absolute;
+        left: 0px;
+        bottom: 0;
+        object-fit: cover;
+        height: 405px;
+        max-width: 235px;
+      }
+      
+       
+        .illuminators__item:not(:last-child){
+          margin-right: 30px;
+        }
+
+
+      
+    
     
     
   

@@ -59,3 +59,38 @@ body{
     color: inherit;
   }
 }
+
+.pagination{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 100px 0 120px;
+&__list{
+  display: flex;
+ }
+ &__next{
+   border: 1px solid $buttons;
+   padding: 18px 20px;
+   color: $title;
+   font-size: 16px;
+   @extend %Rubik-400;
+   transition: all .3s;
+  
+ }
+ &__item{
+  
+  padding:0 15px;
+  
+ }
+ .pagination__link--active{
+  background-color: $buttons;
+  color: #ffff;
+ }
+ &__link{ 
+  border: 1px solid $buttons;
+  padding: 18px 20px;
+  font-size: 16px;
+  color: $title;
+  
+ }
+}

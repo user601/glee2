@@ -1506,13 +1506,31 @@ footer{
   }
   
 }
-.product-card{
+.product-related__card{
   display: none;
-    &.product-card--active{
+    &.product-related__card--active{
    display: block;
     }
   }
-
+  .product-related__card{
+    background-color: #ffff;
+    margin: 0 15px 40px;
+    width: calc(100% / 4 - 30px);
+    height: 380px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    overflow: hidden;
+  }
+  .product-related__items{
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 185px;
+    margin: 0 -15px;    
+   background-color: #ffff;
+    
+   }
 
 
 

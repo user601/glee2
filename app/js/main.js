@@ -17,8 +17,8 @@ $(function(){
     $('.product-related__tabs-item').removeClass('product-related__tabs-item--active');
     $(this).addClass('product-related__tabs-item--active');
   
-    $('.product-card').removeClass('product-card--active');
-    $($(this).attr('href')).addClass('product-card--active');
+    $('.product-related__card').removeClass('product-related__card--active');
+    $($(this).attr('href')).addClass('product-related__card--active');
     });
     
 

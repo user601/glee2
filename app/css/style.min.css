@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.product-page__btn, body, .pagination__next, .menu__list-link, .footer-top__adress, .footer-top__text, .footer-top__link, .footer-top__phone, .footer-top__email, .bottom-menu__list-link, .top-slider__text, .illuminators__item-text, .modal__text, .information__item, .information__text, .mission__text, .mission__content-text, .team__info-link, .category-filter__checkbox, .irs--flat .irs-min, .irs--flat .irs-max, .filter-brand__checkbox, .filter-products__content-link, .filter-products__content-num, .jq-number__field input, .product-info__title, .product-info__text-link, .product-tabs__content-text {
+.product-page__btn, body, .pagination__next, .menu__list-link, .footer-top__adress, .footer-top__text, .footer-top__link, .footer-top__phone, .footer-top__email, .bottom-menu__list-link, .top-slider__text, .illuminators__item-text, .modal__text, .information__item, .information__text, .mission__text, .mission__content-text, .team__info-link, .recent-posts__link, .category-filter__checkbox, .irs--flat .irs-min, .irs--flat .irs-max, .filter-brand__checkbox, .filter-products__content-link, .filter-products__content-num, .jq-number__field input, .product-info__title, .product-info__text-link, .product-tabs__content-text, .blog-page__item-title, .blog-page__item-text {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
@@ -4112,8 +4112,74 @@ footer {
   width: 270px;
 }
 
+.category-search {
+  margin-bottom: 60px;
+}
+
+.category-search__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.category-search__input {
+  width: 222px;
+  border: 2px solid #edf1f4;
+  border-radius: 3px;
+  padding: 0 5px 0 10px;
+  height: 43px;
+}
+
+.category-search__btn {
+  background-color: #edf1f4;
+  border: none;
+  height: 43px;
+  width: 48px;
+  border-radius: 3px;
+  margin-left: -3px;
+  cursor: pointer;
+}
+
+.recent-posts__img {
+  width: 70px;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.recent-posts__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.recent-posts__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9a9a9a;
+  font-size: 12px;
+}
+
+.recent-posts__date-img {
+  padding-right: 5px;
+}
+
+.recent-posts__link {
+  font-size: 14px;
+  color: #333333;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
 .category-filter {
   max-width: 270px;
+}
+
+.category-filter__form {
   margin-bottom: 70px;
 }
 
@@ -4725,4 +4791,107 @@ footer {
   bottom: 185px;
   margin: 0 -15px;
   background-color: #ffff;
+}
+
+.blog-page {
+  padding: 87px 0;
+}
+
+.blog-page__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog-page__content {
+  width: 829px;
+  margin-right: 70px;
+}
+
+.blog-page__aside {
+  width: 270px;
+}
+
+.blog-page__item {
+  margin-bottom: 50px;
+}
+
+.blog-page__item:last-child {
+  margin-bottom: 75px;
+}
+
+.blog-page__img-box {
+  margin-bottom: 40px;
+}
+
+.blog-page__img {
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 830px;
+  height: 500px;
+  display: block;
+}
+
+.blog-page__img-info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #a3bbc8;
+  height: 70px;
+  width: 275px;
+  margin-top: -70px;
+  padding: 25px 20px;
+}
+
+.blog-page__date {
+  color: #ffff;
+  font-size: 12px;
+  margin: 0  20px 0 5px;
+}
+
+.blog-page__author {
+  color: #ffff;
+  font-size: 12px;
+}
+
+.blog-page__item-link {
+  border: 1px solid #a3bbc8;
+  padding: 20px 20px 25px 20px;
+  color: #a3bbc8;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.blog-page__item-link:hover {
+  background-color: #a3bbc8;
+  color: #fff;
+}
+
+.blog-page__item-link:hover path {
+  fill: #fff;
+}
+
+.blog-page__item-span {
+  padding-right: 44px;
+}
+
+.blog-page__item-title {
+  color: #333333;
+  font-size: 36px;
+  margin-bottom: 42px;
+}
+
+.blog-page__item-text {
+  font-style: 16px;
+  line-height: 30px;
+  margin-bottom: 37px;
 }

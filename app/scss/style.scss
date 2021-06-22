@@ -1006,11 +1006,66 @@ footer{
 .category{
   margin-right: 30px;
   width: 270px;
+
 }
+.category-search{
+  margin-bottom: 60px;
+  &__form{
+    display: flex;
+    
+    
+  }
+  &__input{
+   width: 222px;
+   border: 2px solid #edf1f4;
+   border-radius: 3px;
+   padding: 0 5px 0 10px;
+   height: 43px;
+   }
+   &__btn{
+     background-color: #edf1f4;
+     border: none;
+     height: 43px;
+     width: 48px;
+     border-radius: 3px  ;
+     margin-left: -3px;
+     cursor: pointer;
+   }
+  }
+  .recent-posts{
+    &__img{
+      width: 70px;
+      height: 70px;
+      margin-right: 20px;
+    }
+    &__item{
+      display: flex;
+      margin-bottom: 20px;
+    }
+    &__date{
+      display: flex;
+      align-items: center;
+      color: #9a9a9a;
+      font-size: 12px;
+      
+    }
+    &__date-img{
+      padding-right:5px;
+    }
+    &__link{
+     @extend%Rubik-400;
+     font-size: 14px;
+     color: #333333;
+     display: inline-block;
+     margin-bottom: 12px;
+    }
+  }
+ 
   .category-filter{
     max-width: 270px;
+  &__form{
     margin-bottom: 70px;
-  
+  }
   &__title{
     text-transform: uppercase;
     position: relative;
@@ -1533,7 +1588,85 @@ footer{
    }
 
 
-
+.blog-page{
+  padding: 87px 0 ;
+&__inner{
+  display: flex;
+  justify-content: space-between;
+}
+&__content{
+  width: 829px;
+  margin-right: 70px;
+}
+&__aside{
+  width:270px;
+}
+&__item{
+  
+  margin-bottom: 50px;
+  &:last-child{
+    margin-bottom: 75px;
+  }
+}
+&__img-box{
+  margin-bottom: 40px;
+}
+&__img{
+  position: relative;
+  object-fit: cover;
+  max-width: 830px;
+  height: 500px;
+  display: block; 
+}
+&__img-info{
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  background-color: $buttons;
+  height: 70px;
+  width: 275px;
+  margin-top: -70px;
+  padding:25px 20px;
+}
+&__date{
+  color: #ffff;
+  font-size: 12px;
+  margin: 0  20px 0 5px;
+}
+&__author{
+  color: #ffff;
+  font-size: 12px;
+}
+&__item-link{
+  border: 1px solid $buttons;
+  padding:20px 20px 25px 20px;
+  color: $buttons;
+  transition: all .3s;
+  &:hover{
+    background-color:$buttons;
+    color: #fff;
+      path{
+        fill: #fff;    
+      }
+  }
+ }
+ &__item-span{
+   padding-right: 44px;
+  }
+ 
+ &__item-title{
+   color:#333333;
+   font-size: 36px;
+   @extend%Rubik-400;
+   margin-bottom: 42px;
+ }
+ &__item-text{
+  @extend%Rubik-400;
+  font-style: 16px;
+  line-height: 30px;
+  margin-bottom: 37px;
+ }
+}
      
   
 @import 'media';

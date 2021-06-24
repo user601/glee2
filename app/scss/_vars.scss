@@ -39,6 +39,16 @@ font-family: 'DMSans-Medium', sans-serif;
   border: none;
   cursor: pointer;
 }
+%button{
+text-transform: uppercase;
+color:#ffff;
+background-color:$buttons;
+@extend%Rubik-400;
+font-size: 14px;
+border: none;
+cursor: pointer;
+}
+
 %checkbox-hidden{
   width: 1px;
   height: 1px;

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.product-page__btn, .comments-form__btn, body, .pagination__next, .menu__list-link, .footer-top__adress, .footer-top__text, .footer-top__link, .footer-top__phone, .footer-top__email, .bottom-menu__list-link, .top-slider__text, .illuminators__item-text, .modal__text, .information__item, .information__text, .mission__text, .mission__content-text, .team__info-link, .recent-posts__link, .category-filter__checkbox, .irs--flat .irs-min, .irs--flat .irs-max, .filter-brand__checkbox, .filter-products__content-link, .filter-products__content-num, .jq-number__field input, .product-info__title, .product-info__text-link, .product-tabs__content-text, .blog-page__item-title, .blog-page__item-text, h4, p, .person__position, .person__tags-link, .person__tags, .person__social, .comments__content-date, .comments__content-text {
+.product-page__btn, .comments-form__btn, .contact-form__btn, body, .pagination__next, .menu__list-link, .footer-top__adress, .footer-top__text, .footer-top__link, .footer-top__phone, .footer-top__email, .bottom-menu__list-link, .top-slider__text, .illuminators__item-text, .modal__text, .information__item, .information__text, .mission__text, .mission__content-text, .team__info-link, .recent-posts__link, .category-filter__checkbox, .irs--flat .irs-min, .irs--flat .irs-max, .filter-brand__checkbox, .filter-products__content-link, .filter-products__content-num, .jq-number__field input, .product-info__title, .product-info__text-link, .product-tabs__content-text, .blog-page__item-title, .blog-page__item-text, h4, p, .person__position, .person__tags-link, .person__tags, .person__social, .comments__content-date, .comments__content-text, .info-card__contact, .info-card__contact-link {
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
@@ -19,7 +19,7 @@
   font-weight: 500;
 }
 
-.title, .footer-top__title, .mission__content-num, .mission__item-text, .support__numbers, .category-filter__title, .product-related__title, .comments__content-name, .comments__title, .comments-form__title {
+.title, .footer-top__title, .mission__content-num, .mission__item-text, .support__numbers, .category-filter__title, .product-related__title, .comments__content-name, .comments__title, .comments-form__title, .contact__info-link, .contact__info-title, .info-card__title {
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
 }
@@ -34,7 +34,7 @@
   cursor: pointer;
 }
 
-.comments-form__btn {
+.comments-form__btn, .contact-form__btn {
   text-transform: uppercase;
   color: #ffff;
   background-color: #a3bbc8;
@@ -5095,9 +5095,6 @@ h6::before {
 
 .comments-form__btn {
   padding: 20px 35px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
 }
 
 .comments-form__box-input {
@@ -5131,9 +5128,186 @@ h6::before {
 .comments-form__textarea {
   border: 1px solid #e5e5e5;
   display: block;
-  padding: 18px 20px;
+  padding: 18px 40px;
   width: 100%;
   height: 120px;
   resize: none;
   margin-bottom: 40px;
+  background-image: url(../images/icons/comment.svg);
+  background-repeat: no-repeat;
+  background-position: 795px 17px;
+}
+
+#map {
+  width: 500px;
+  height: 335px;
+}
+
+.contact {
+  padding: 120px 0 140px;
+}
+
+.contact__info-top {
+  margin-bottom: 120px;
+}
+
+.contact__info-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact__info-link {
+  text-align: center;
+  display: block;
+  color: #a3bbc8;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.contact__info-title {
+  text-align: center;
+  color: #436372;
+  font-size: 35px;
+  margin-bottom: 75px;
+}
+
+.contact__info-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 370px;
+  height: 100%;
+  background-color: #fbfbfb;
+  margin-right: 30px;
+  padding: 60px 55px 80px 55px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border: 1px solid transparent;
+}
+
+.contact__info-item:hover {
+  border: 1px solid #a3bbc8;
+}
+
+.contact__info-item:last-child {
+  margin-right: 0;
+}
+
+.contact__info-item:first-child {
+  padding: 60px 90px 80px 90px;
+}
+
+.contact__info-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-card__title {
+  color: #3f3f3f;
+  font-size: 20px;
+  margin-bottom: 27px;
+}
+
+.info-card__icon {
+  margin-bottom: 60px;
+}
+
+.info-card__contact, .info-card__contact-link {
+  color: #565872;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.info-card__contact {
+  text-align: center;
+}
+
+.info-card__icon {
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.info-card__icon:hover .cls-2 {
+  fill: #fff;
+}
+
+.info-card__icon:hover .cls-1 {
+  fill: #a3bbc8;
+}
+
+.info-card:hover {
+  fill: #fff;
+}
+
+.info-card:hover path {
+  fill: #a3bbc8;
+}
+
+.contact-form {
+  margin-right: 50px;
+}
+
+.contact-form__btn {
+  padding: 18px 45px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.contact-form__box-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.contact-form__input--name, .contact-form__input--mail {
+  width: 300px;
+  height: 50px;
+  padding: 15px 42px 20px;
+  display: inline-block;
+  border: none;
+  background-color: #fafafa;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: 270px 17px;
+}
+
+.contact-form__input--name {
+  margin-right: 20px;
+  background-image: url(../images/icons/man.svg);
+}
+
+.contact-form__input--mail {
+  background-image: url(../images/icons/letter.svg);
+}
+
+.contact-form__textarea {
+  border: none;
+  display: block;
+  padding: 18px 40px;
+  background-color: #fafafa;
+  width: 100%;
+  height: 175px;
+  resize: none;
+  margin-bottom: 30px;
+  background-image: url(../images/icons/comment.svg);
+  background-repeat: no-repeat;
+  background-position: 590px 17px;
 }

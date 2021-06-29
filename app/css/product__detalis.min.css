@@ -4000,6 +4000,15 @@ Build date: 2019-12-19 16:51:02
   }
 }
 
+@media (max-width: 411px) {
+  .user-nav__link--left, .user-nav__link--right {
+    top: 0;
+  }
+  .user-nav__link-search {
+    margin-right: 10px;
+  }
+}
+
 /************320px****************/
 @media (max-width: 320px) {
   .user-nav__link-menu {

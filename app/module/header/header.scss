@@ -277,7 +277,14 @@
     }
   }
   
-  
+  @media(max-width:411px){
+    .user-nav__link--left, .user-nav__link--right{
+      top: 0;
+  }
+  .user-nav__link-search{
+    margin-right: 10px;
+  }
+  }
   
   
   /************320px****************/

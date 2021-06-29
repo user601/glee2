@@ -91,3 +91,138 @@
     }
   }
 }
+@media(max-width:1200px){
+.top-slider{
+  &__img{
+    width: 80%;
+  }
+  &__item {
+    padding: 75px 170px 130px 120px;
+}
+&__container { 
+  background-position: 523px 0px;
+  max-width: 1160px;
+}
+}
+}
+@media(max-width:850px){
+  .top-slider__item {
+    padding: 30px 183px 99px 50px;
+}
+ }
+ @media(max-width:620px){
+  .top-slider__item {
+    padding: 30px 114px 74px 15px;
+}
+ }
+@media(max-width:768px){
+  .top-slider{
+  &__item {
+    padding: 75px 191px 100px 10px;
+}
+&__span {
+  padding-right: 21px;
+}
+&__container {
+  background-position: 284px 22px;
+  max-width: 768px;
+}
+&__title {
+  font-size: 50px;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+&__img {
+  width: 80%;
+  max-width: 640px;
+  max-height: 220px;
+  margin-top: 70px;
+}
+}
+}
+@media(max-media:540px){
+  .top-slider{
+  &__item {
+    padding: 30px 120px 74px 15px;
+}
+&__title {
+  font-size: 45px;
+  line-height: 60px;
+  margin-bottom: 25px;
+}
+&__img {
+  width: 75%;
+  max-height: 190px;
+  margin-top: 150px;
+}
+}
+ }
+ 
+
+@media(max-width:414px){
+  .top-slider{
+    &__span {
+      padding-right: 10px;
+  }
+  &__title {
+   font-size: 45px;
+   line-height: 50px;
+   margin-bottom: 15px;
+}
+  &__item {
+    padding: 30px 135px 95px 20px;
+}
+&__text {
+  max-width: 150px;
+  font-size: 15px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+&__link:last-child {
+  padding: 17px 10px 17px 15px;
+}
+&__img {
+  width: 100%;
+  margin-left: -40px;
+  max-height: 165px;
+  margin-top: 150px;
+}
+&__container {
+  background-position: -20px 12px;
+  max-width: 412px;
+}
+  }
+  .top-slider .slick-dots li {
+    margin-left: 30px;
+    margin-top: -60px;
+  }
+}
+@media(max-width:372px){
+  .top-slider{
+  &__img {
+    width: 80%;
+    max-width: 640px;
+    max-height: 180px;
+    margin-top: 170px;
+}
+}
+}
+@media(max-width:320px){
+  .top-slider{
+    &__item {
+      padding: 5px 136px 75px 1px;
+  }
+  &__img {
+    width: 100%;
+    max-height: 140px;    
+ }
+ &__text {
+  margin-bottom: 15px;
+}
+  }
+}
+
+
+
+ 
+ 

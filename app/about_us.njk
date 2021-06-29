@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/about_us.min.css">
+</head>
+<body>
+  {% include ('app/module/header/header.html')%}
+  <main class="main">
+<section class="top">
+  <div class="top__container">
+<div class="container">
+  <h2 class="top__title title">About Us</h2>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Home
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">About Us</a>
+      </li>
+    </ul>
+  </div>
+</div>
+  </div>
+</section>
+{% include ('app/module/mission/mission.html')%}
+{%include ('app/module/support/support.html')%}
+
+{%include ('app/module/team/team.html')%}
+   
+
+   
+
+{%include ('app/module/articles/articles.html')%}
+{%include('app/module/partners-logo/partners-logo.html')%}
+  </main>
+{% include 'app/module/footer/footer.html'%}
+  <script src="js/main.min.js"></script>
+</body>
+</html>

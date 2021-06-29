@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/blog__detalis.min.css">
+</head>
+<body>
+  {% include ('app/module/header/header.html')%}
+  <main class="main">
+<section class="top">
+  <div class="top__container">
+<div class="container">
+  <h2 class="top__title title">Blog Detalis</h2>
+  <div class="breadcrumbs">
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link" href="#">
+          Home
+        </a>
+      </li>
+      <li class="breadcrumbs__item">
+        <a class="breadcrumbs__link " href="#">Blog</a> 
+      </li>
+      <li class="breadcrumbs__item">
+      <a class="breadcrumbs__link  breadcrumbs__link--active" href="#">Blog Detalis</a>
+    </li>
+    </ul>
+  </div>
+</div>
+  </div>
+</section>
+{%include('app/module/blog-det__content/blog-det__content.html')%}
+{%include ('app/module/partners-short/partners-short.html')%}
+  </main>
+{% include 'app/module/footer/footer.html'%}
+  <script src="js/main.min.js"></script>
+</body>
+</html>

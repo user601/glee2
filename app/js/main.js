@@ -1,6 +1,18 @@
 $(function(){
   
-    
+  $('.product__content-filter__btn').on('click',function(){
+    $(this).removeClass('product__content-filter__btn--active');
+    $('.product__content-filter__btn').addClass('product__content-filter__btn--active');
+  }); 
+  $('.button-list').on('click',  function(){
+  $('.shop-card__item').addClass('shop-card__item--list');
+  });
+  $('.button-grid').on('click', function(){
+  $('.shop-card__item').removeClass('shop-card__item--list');
+  });
+  
+
+
 
   $('.product-tabs__top-item').on('click', function(e){
   e.preventDefault();
@@ -21,7 +33,8 @@ $(function(){
     $($(this).attr('href')).addClass('product-related__card--active');
     });
     
-
+  $('.select-style').styler();
+  
   $('.product-page__num').styler();
 
   $('.product-slide__prewiev').slick({
@@ -79,6 +92,22 @@ $(".star").rateYo({
   readOnly: true
   
 });
+
+    var containerEl1 = document.querySelector('.design');
+    var containerEl2 = document.querySelector('.products-info');
+    var config = {
+        controls: {
+            scope: 'local',
+        },
+    };
+    var mixer1 = mixitup(containerEl1, config);
+    var mixer2 = mixitup(containerEl2, config);
+    /*(() => mixitup(containerEl1, config))();
+    (() => mixitup(containerEl2, config))();*/
+
+
+
+
 
 let map;
 

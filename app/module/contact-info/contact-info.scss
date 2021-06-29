@@ -1,0 +1,147 @@
+#map{
+  width: 500px;
+  height: 335px;
+}
+.contact{
+  padding: 120px 0 140px;
+  &__info-top{
+    margin-bottom: 120px;
+  }
+  &__info-bottom{
+    display: flex;
+  }
+
+  &__info-link{
+    text-align:center;
+    display:block;
+    color: $buttons;
+    font-size: 16px;
+    @extend %DMSans-700;
+    margin-bottom: 20px;
+    }
+
+  &__info-title{
+  text-align: center;
+  color: #436372;
+  @extend %DMSans-700;
+  font-size: 35px;
+  margin-bottom: 75px;
+  }
+  &__info-item{
+  display: flex;
+  width: 370px;
+  height: 100%;
+  background-color: #fbfbfb;
+  margin-right: 30px;
+  padding: 60px 55px 80px 55px;
+  transition: all .3s;
+  border: 1px solid transparent;
+  &:hover{
+    border: 1px solid $buttons;
+  }
+    &:last-child{
+      margin-right: 0;
+    }
+    &:first-child{
+      padding: 60px 90px 80px 90px ;
+    }
+  }
+  &__info-list{
+    display: flex;
+
+    
+  }
+}
+  .info-card{
+   
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ &__title{
+   color: #3f3f3f;
+   @extend %DMSans-700;
+   font-size: 20px;
+   margin-bottom: 27px;
+ }
+ &__icon{
+   margin-bottom: 60px;
+ }
+ &__contact, &__contact-link{
+   color: #565872;
+   font-size: 16px;
+   line-height: 30px;
+   @extend %Rubik-400;  
+ }
+  &__contact{
+  
+   text-align: center;
+    
+  }
+  &__icon{
+    transition: all .3s;
+    &:hover{
+      .cls-2 {
+        fill: #fff;
+        
+      }
+      .cls-1 {
+        fill:#a3bbc8 ;
+     }
+  }
+  }
+  &:hover{
+    path{
+      fill:#a3bbc8 ;
+      
+    }
+    fill:#fff;
+  }
+ 
+}
+
+.contact-form{
+margin-right: 50px;
+&__btn{
+@extend %button;
+padding: 18px 45px;
+border-radius: 3px;
+text-transform: uppercase;
+}
+&__box-input{
+  display: flex;
+  margin-bottom: 25px;
+ }
+ &__input--name, &__input--mail{
+  width: 300px;
+  height: 50px;
+  padding: 15px 42px 20px;
+  display: inline-block;
+  border: none;
+  background-color: #fafafa;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: 270px 17px;
+ }
+ &__input--name{
+   margin-right: 20px;
+   background-image: url(../images/icons/man.svg); 
+ }
+ &__input--mail{
+  background-image: url(../images/icons/letter.svg);
+ }
+ &__textarea{
+  border: none;
+  display: block;
+  padding: 18px 40px;
+  background-color: #fafafa;
+  width: 100%;
+  height: 175px;
+  resize: none;
+  margin-bottom: 30px;
+  background-image: url(../images/icons/comment.svg);
+  background-repeat: no-repeat;
+  background-position: 590px 17px;
+ }
+}
+ 

@@ -32,6 +32,15 @@ body{
 .button{
   cursor: pointer;
 }
+
+.top{
+  &__container{
+    max-width: 1920px;
+    background-color: #edf1f4;
+    padding:33px 0 ;
+    text-align: center;
+  }
+}
 .breadcrumbs{
   display: flex;
   justify-content: center;

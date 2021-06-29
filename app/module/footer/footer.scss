@@ -1,0 +1,107 @@
+footer{
+  background-color: $bgfff;
+  
+}
+.footer-top{
+  padding: 79px 285px 74px;
+  display: flex;
+  border-bottom: 1px solid #dae4e9;
+  &__logo{
+   display: block;
+   margin-bottom: 28px;
+  }
+  &__adress, &__text {
+    line-height: 2;
+    font-size: 14px;
+    @extend %Rubik-400;
+    color: $footertext;
+  }
+  &__contacts{
+    width:193px;
+    margin-right: 107px;
+  }
+  &__nav{
+    width:128px;
+    margin-right: 172px;
+  }
+  &__item-form{
+   max-width: 270px;
+  }
+  &__link{
+    line-height: 2;
+    font-size: 14px;
+    @extend %Rubik-400;
+    color: $footertext;
+    display: block;
+  }
+  &__phone,
+  &__email{
+    line-height: 2;
+    font-size: 14px;
+    @extend %Rubik-400;
+    color:$footertext;
+  }
+  &__title{
+   @extend %DMSans-700;
+   font-size: 16px;
+   color:#1f2044; 
+   margin-top: 16px;
+   margin-bottom: 30px;
+  }
+  &__text{
+    margin-bottom: 25px;
+    margin-right: 110px;
+  }
+  &__form{
+    display: flex;
+  }
+  &__form-input{
+   max-width: 170px;
+   background-color: #fef7f0;
+   border: none;
+   width:100%;
+   padding: 15px;
+   &::placeholder{
+     color:#1f2044;
+     font-size: 12px;
+   }
+  }
+  &__form-btn{
+   border: none;
+   background-color:$buttons;
+   color:#fff;
+   text-transform: uppercase;
+   padding: 17px 15px;
+   font-size: 12px;
+   cursor: pointer;
+  }
+}
+.footer-bottom{
+  padding: 40px 285px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  font-size: 14px;
+  color:$footertext;
+}
+   .bottom-menu {
+  &__list-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+
+  &__list-item:not(:last-child){
+    padding-right: 15px;
+    padding-left: 15px;
+    border-right: 1px solid $footertext; ;
+   }
+  &__list-link{
+    color:$footertext;
+    font-size: 14px;
+    line-height: 12px;
+    text-decoration: none;
+    @extend %Rubik-400;
+  }
+}

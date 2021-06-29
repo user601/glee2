@@ -1,0 +1,112 @@
+.mission{
+  &__inner{
+   display: flex;
+   align-items: center;
+   margin: 120px 0 120px;
+  }
+  &__img{
+  max-width: 570px;
+   width: 100%;
+  }
+  &__box{
+    border-bottom: 3px solid #ebeef3;
+  }
+  &__title{
+    @extend %Rubik-500;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__content{
+  padding-left: 45px;
+  }
+  &__text{
+    @extend %Rubik-400;
+    font-size: 16px;
+    margin-bottom: 65px;
+  }
+  &__content-years{
+    display: flex;
+    align-items:flex-end;
+    max-width: 280px;
+  }
+  &__content-num{
+   font-size: 140px;
+    @extend %DMSans-700;
+    color:$buttons;
+    padding-right: 30px;
+  }
+  &__content-text{
+    @extend %Rubik-400;
+    font-size: 16px;
+    margin-bottom: 35px;
+    max-width: 120px;
+    line-height: 30px;
+    
+  }
+
+  &__items {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+   }
+  &__item{
+   padding-right: 32px;
+   border-right: 2px solid #ebeef3;
+   text-align: center;
+   margin-top: 40px;
+   &:last-child{
+   border-right:none;
+   padding-right: 0;
+   
+   }
+   &--projects{
+     padding-left: 10px;
+     position: relative;
+     &::before{
+       content:"";
+       position: absolute;
+       background-image: url(../images/icons/520.svg);
+       width: 36px;
+       height: 38px;
+       top:12px;
+       left:0px;
+     }
+   }
+   &--revenue{
+     position: relative;
+     &::before{
+     content:"";
+     position: absolute;
+     background-image: url(../images/icons/megafon.svg);
+     top:12px;
+     width: 36px;
+     height: 38px;
+     }
+   }
+   &--awards{
+    position: relative;
+    &::before{
+    content:"";
+    background-image: url(../images/icons/medalofhonor.svg);
+    position: absolute;
+    top:12px;
+    width: 36px;
+    height: 38px;
+    }
+   }
+  }
+   
+  &__item-num{
+    padding-left: 50px;
+    font-size: 36px;
+    color: $title;
+    
+  }
+  &__item-text{
+  @extend %DMSans-700;
+  padding-left: 50px;
+  margin: 0 auto; 
+  }
+
+}

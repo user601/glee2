@@ -1,0 +1,16 @@
+.partners{
+  position: relative;
+  background-color: #fef7f0;
+  z-index: -1;
+  margin-top: -150px;
+  &__logo{
+    padding: 260px 0 90px;
+  }
+
+&__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+}

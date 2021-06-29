@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/contact.min.css">
+</head>
+<body>
+ {% include ('app/module/header/header.html')%}
+  <main class="main">
+{% include('app/module/contact-brc/contact-brc.html')%}
+{% include('app/module/contact-info/contact-info.html')%}
+{%include('app/module/articles/articles.html')%}
+{%include('app/module/partners-logo/partners-logo.html')%}
+  </main>
+ {% include ('app/module/footer/footer.html')%}
+ <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+    <script>let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 29.603683067827617, lng:  -95.29707670715787 },
+          zoom: 8,
+        });
+      }</script>
+  <script src="js/main.min.js"></script>
+  
+</body>
+</html>

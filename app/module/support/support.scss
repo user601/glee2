@@ -1,0 +1,22 @@
+.support{
+
+  background-color: #fcd7b6;
+  margin-bottom: 120px;
+  padding: 85px 0 82px ;
+  &__list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+ 
+  }
+   
+  &__numbers{
+    
+    padding-top: 20px;
+    font-size: 36px;
+     @extend %DMSans-700;
+  }
+  &__info{
+    text-align: center;
+  }
+}

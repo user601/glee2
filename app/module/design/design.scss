@@ -1,0 +1,41 @@
+.design{
+  margin-bottom: 120px;
+  &__nav{
+    margin-bottom: 80px;
+  }
+  &__title{
+    margin-bottom: 35px;
+  }
+}
+.design-nav__items{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+ }
+ .design-nav__button{
+   border:none;
+   cursor: pointer;
+   background-color:transparent;
+   color: $footertext;
+   &:hover{
+     color: #1f2044;
+   }
+  }
+  .design-nav__item:not(:last-child){
+  margin-right: 30px;
+  }
+.design-items{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 35px 30px;
+
+}
+
+.design-card__link{
+ max-width: 370px;
+ height: 100%;
+ transition: all .3s;
+ &:hover{
+  box-shadow: 0px 6px 47px 3px #feefe2;
+ }
+}

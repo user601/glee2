@@ -1,0 +1,93 @@
+.top{
+  &__container{
+    max-width: 1920px;
+    background-color: #edf1f4;
+    padding:33px 0 ;
+    text-align: center;
+  }
+}
+.top-slider{
+  
+
+  &__img{
+ max-width: 640px;
+ max-height: 264px;
+ margin-top: 70px;
+
+  }
+  
+  &__container{
+    background-image: url('../images/slider/ellipse\ .png');
+    background-repeat: no-repeat;
+    background-position: 1090px 90px;
+    max-width: 600px;
+    background-color: $slider;
+    max-width: 1770px;
+    
+  }
+  &__item{
+    display: flex !important ;
+    justify-content: space-between;
+    padding: 220px 200px 280px 200px
+    
+    }
+  &__title{
+    max-width: 415px;
+    font-size: 72px;
+    line-height: 70px;
+    color:$title;
+    @extend %Rubik-500;
+    margin-bottom: 40px;
+  }
+  &__text{
+    max-width: 370px;
+    font-size: 18px;
+    line-height: 30px;
+    color:$accent;
+    @extend %Rubik-400;
+    margin-bottom: 42px;
+
+  }
+  &__link:last-child{
+    display: inline-block;
+    background-color: $buttons;
+    text-transform: uppercase;
+    color:#ffff;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %Rubik-500;
+    padding: 24px 20px 20px 28px;
+  }
+   &__span{
+    padding-right: 55px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    li{
+      margin-left: 10px;
+      margin-top: -70px;
+      button{
+        
+        position:relative;
+        padding: 0;
+        background-color: #fde3cc;
+        width: 29px;
+        height: 29px;
+        border: none;
+        border-radius: 50%;
+        &::before{
+          content: '';
+          position: absolute;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }  
+      }
+      &.slick-active{
+       button{
+         background-color: #ffff;
+       }
+      }
+    }
+  }
+}

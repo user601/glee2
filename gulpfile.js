@@ -1,11 +1,13 @@
 const { src, dest, watch, parallel, series } = require('gulp');
-const scss = require('gulp-sass');
-const concat = require('gulp-concat');
-const autoprefixer = require('gulp-autoprefixer');
-const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
-const browserSync = require('browser-sync').create();
-const del = require ('del');
+const scss           = require('gulp-sass');
+const concat         = require('gulp-concat');
+const autoprefixer   = require('gulp-autoprefixer');
+const uglify         = require('gulp-uglify');
+const rename         = require('gulp-rename');
+const imagemin       = require('gulp-imagemin');
+const nunjucksRender = require('gulp-nunjucks-render');
+const browserSync    = require('browser-sync').create();
+const del            = require ('del');
 function browsersync(){
   browserSync.init({
     server: {
@@ -16,9 +18,12 @@ function browsersync(){
 }
 
 function styles(){
-return src('app/scss/style.scss')
+return src('app/scss/*.scss')
 .pipe(scss({outputStyle: 'expanded'}))
-.pipe(concat('style.min.css'))
+/*.pipe(concat(''))*/
+.pipe(rename({
+  suffix : '.min'
+}))
 .pipe(autoprefixer({overrideBrowserslist:['last 10 versions'],
  grid:true
 }))
@@ -26,6 +31,12 @@ return src('app/scss/style.scss')
 .pipe(browserSync.stream())
 }
 
+function nunjucks(){
+return src('app/*.njk')
+.pipe(nunjucksRender())
+.pipe(dest('app'))
+.pipe(browserSync.stream())
+}
 function scripts(){
 
   return src(['node_modules/jquery/dist/jquery.js',
@@ -34,6 +45,7 @@ function scripts(){
    'node_modules/rateyo/src/jquery.rateyo.js',
    'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
    'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
+   'node_modules/mixitup/dist/mixitup.js',
     'app/js/main.js'
   ])
 
@@ -70,7 +82,8 @@ return del('dist')
 }
 
 function watching(){
-  watch(['app/scss/**/*.scss'],styles);
+  watch(['app/**/*.scss'],styles);
+  watch(['app/*.njk'],nunjucks);
   watch(['app/js/**/*.js','!app/js/main.min.js'],scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
 }
@@ -78,7 +91,8 @@ exports.styles = styles;
 exports.browserSync = browserSync;
 exports.watching = watching;
 exports.scripts = scripts;
-exports.images = images;
+exports.images  = images;
+exports.nunjucks = nunjucks;
 exports.cleanDist = cleanDist;
 exports.build = series (cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.default = parallel(nunjucks, styles, scripts, browsersync, watching);

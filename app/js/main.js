@@ -1,4 +1,10 @@
 $(function(){
+
+$('.menu__btn').on('click', function(){
+ $('.menu__list').toggleClass('menu__list--active'); 
+});
+
+
   
   $('.product__content-filter__btn').on('click',function(){
     $(this).removeClass('product__content-filter__btn--active');

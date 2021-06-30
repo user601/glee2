@@ -60,3 +60,140 @@
 .illuminators__item:not(:last-child){
     margin-right: 30px;
   }
+
+  @media(max-width:1500px){
+    .illuminators{
+    &__item-title {
+      font-size: 22px;
+  }
+  &__item {
+    max-width: 750px;
+    padding: 97px 70px 87px 130px;   
+ }
+ &__item-span {
+  
+  padding-right: 5px;
+ }
+  &__image {
+  left: -65px; 
+  height: 375px;
+  max-width: 220px;
+}
+ }
+  }
+  @media(max-width:1350px){
+    .illuminators{
+      &__item {
+      max-width: 665px;
+      padding: 97px 94px 87px 105px;
+      }
+      &__content{
+      padding-left: 170px;
+      }
+  }
+  }
+  @media(max-width:1280px){
+  .illuminators{
+    &__content {
+      padding-left: 190px;
+  }
+  &__items{
+    flex-direction: column;
+    align-items: center;
+  }
+   &__item {
+    max-width: 700px;
+    padding: 97px 9px 87px 79px;
+   }
+  &__item:not(:last-child) {
+    margin-bottom: 155px;
+}
+    
+}
+}
+  @media(max-width:895px){
+    .illuminators{
+    &__item:not(:last-child) {
+      margin-right: 0;
+  }
+  &__item {
+    padding: 80px 10px 51px 50px;
+}
+}
+  }
+
+  @media(max-width:585px){
+    .illuminators{
+     &__item{
+      max-width: 535px;
+    }
+    }
+  }
+  @media(max-width:475px){
+    .illuminators{
+    &__item-text {
+      font-size: 11px;
+      line-height: 27px;
+    }
+    &__content {
+      padding-left: 159px;
+  }
+  &__image {
+    left: -52px;
+    height: 249px;
+    max-width: 162px;
+}
+  }
+}
+@media(max-width:415px){
+  .illuminators{
+    &__content{
+padding-left: 109px;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 50px;
+  }
+  &__items{
+    margin: 0 0 140px;
+  }
+  }
+  }
+@media(max-width:375px){
+  .illuminators{
+&__item--link{
+  padding: 10px 10px 15px 10px;;
+}
+&__content {
+  padding-left: 105px;
+}
+&__image {
+  left: -53px;
+  max-width: 127px;
+}
+&__item {
+  padding: 80px 10px 51px 30px;
+}
+&__image {
+  left: -27px;
+}
+
+}
+}
+@media(max-width:320px){
+  .illuminators{
+  &__item {
+    padding: 10px 5px 35px 20px;
+}
+&__item-title {
+  font-size: 20px;
+}
+&__content {
+  padding-left: 70px;
+}
+&__image {
+  left: -53px;
+  max-width: 90px;
+  height: 170px;
+}
+}
+}

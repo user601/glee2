@@ -43,3 +43,25 @@
    background-image: url(../images/description/card.svg);
    background-repeat: no-repeat;
   }
+ @media(max-width:800px){
+  .description__item {
+    padding: 0px;
+    margin-bottom: 15px;
+}
+.description__items {
+  flex-direction: column;
+}
+
+ }
+
+ @media(max-width:420px){
+  .description__info{
+    padding-left: 50px;
+  }
+  .description__item {
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+
+ }

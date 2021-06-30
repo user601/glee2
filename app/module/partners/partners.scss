@@ -14,3 +14,24 @@
   
 }
 }
+
+@media(max-width:750px){
+  .partners{
+  &__list {
+    justify-content: space-around;
+}
+&__item-logo{
+  width:80%;
+}
+&__logo {
+  padding: 180px 0 50px;
+}
+  }
+}
+@media(max-width:650px){
+  .partners{
+    &__item-logo{
+      width: 50%;
+    }
+  }
+}

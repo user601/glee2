@@ -116,3 +116,91 @@ position: relative;
    }
   }
   
+  @media(max-width:1200px){
+    .articles{
+  &__top {
+    justify-content: space-around;
+  }
+&__items {
+  justify-content: center;
+}
+.article__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+}
+
+.article-card{
+&__title {
+  font-size: 16px;
+}
+&__img, &__info {
+  max-width: 350px;
+}
+ 
+}
+
+  }
+
+  @media(max-width:1080px){
+    .article-card {
+      &__title{
+        font-size: 15px;
+      }
+      &__img, &__info{
+        max-width: 300px;
+      }
+  }
+  }
+
+  @media(max-width:950px){
+    .article-card{
+    &__img, &__info {
+      max-width: 280px;
+    }
+    &__title, &__news {
+      font-size: 14px;
+  }
+  &__bottom {
+    font-size: 10px;
+    }
+    &__img {
+      height: 200px;
+   }
+   }
+  }
+  @media(max-width:860px){
+    .article-card{
+    &__title, &__news {
+      font-size: 12px;
+   }
+   &__img, &__info {
+    max-width: 250px;
+  }
+  }
+  }
+@media(max-width:750px){
+  .articles{
+  &__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img, &__info {
+    max-width: 300px;
+  }
+}
+}
+
+
+
+  @media(max-width:414px){
+    .articles{
+    &__items {
+    flex-direction: column;
+    align-items: center;
+    }
+   
+  }
+  
+ }
+  

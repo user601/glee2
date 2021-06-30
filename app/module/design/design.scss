@@ -56,15 +56,20 @@ grid-gap: 35px 30px;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 24px 5px;
 }
+.design-nav{
+
+  &__item:not(:last-child) {
+    margin-right: 5px;
+}
+}
 }
 
 @media(max-width:320px){
   .design-nav{
-
-    &__item:not(:last-child) {
-      margin-right: 5px;
+ &__item:not(:last-child) {
+      margin-right: 2px;
   }
-  }
+}
 
 .design-items{
   grid:none;

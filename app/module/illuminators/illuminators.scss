@@ -119,7 +119,10 @@
   &__item {
     padding: 80px 10px 51px 50px;
 }
+ &__item-text {
+  font-size: 15px;
 }
+ }
   }
 
   @media(max-width:585px){

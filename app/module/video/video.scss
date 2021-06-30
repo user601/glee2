@@ -9,3 +9,29 @@
  align-items: center;
  margin-bottom: 115px;
  }
+
+
+ @media(max-width:1200px){
+   .video-presentation{
+     height: 400px;
+   }
+ }
+ @media(max-width:880px){
+  .video-presentation{
+    height: 300px;
+  }
+}
+@media(max-width:650px){
+  .video-presentation{
+    height: 250px;
+    &__btn{
+      width: 70%;
+    }
+  }
+  
+}
+@media(max-width:320px){
+.video-presentation{
+  height: 250px;
+ }
+}

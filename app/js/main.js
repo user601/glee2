@@ -1,6 +1,6 @@
 $(function(){
 
-$('.menu__btn').on('click', function(){
+$('.menu__btn, .menu__list-item a').on('click', function(){
  $('.menu__list').toggleClass('menu__list--active'); 
 });
 

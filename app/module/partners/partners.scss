@@ -35,3 +35,11 @@
     }
   }
 }
+
+@media(max-width:320px){
+  .partners{
+    &__item-logo{
+      width: 50%;
+    }
+  }
+}

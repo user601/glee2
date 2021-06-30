@@ -2724,6 +2724,20 @@ footer {
   }
 }
 
+@media (max-width: 355px) {
+  .footer-top__nav {
+    margin-right: 21px;
+    margin-left: 43px;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer-top__nav {
+    margin-right: 20px;
+    margin-left: 35px;
+  }
+}
+
 @media (max-width: 320px) {
   .footer-top__nav {
     margin-right: 35px;
@@ -2999,6 +3013,12 @@ footer {
 }
 
 @media (max-width: 650px) {
+  .partners__item-logo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 320px) {
   .partners__item-logo {
     width: 50%;
   }

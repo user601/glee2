@@ -218,7 +218,7 @@ footer{
   @media(max-width:390px){
     
     .footer-top{
-      
+
     &__nav {
       margin-right: 30px;
      }
@@ -317,6 +317,19 @@ footer{
       font-size: 12px;     
   }
   }
+}
+@media(max-width:355px){
+  .footer-top__nav {
+    margin-right: 21px;
+    margin-left: 43px;
+}
+}
+
+@media(max-width:350px){
+  .footer-top__nav {
+    margin-right: 20px;
+    margin-left: 35px;
+}
 }
 @media (max-width: 320px){
   .footer-top{

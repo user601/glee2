@@ -5939,3 +5939,14 @@ h6::before {
   background-repeat: no-repeat;
   background-position: 590px 17px;
 }
+
+@media (max-width: 730px) {
+  .pagination__link, .pagination__next {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .title {
+    font-size: 30px;
+    text-align: center;
+  }
+}

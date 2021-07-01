@@ -3688,7 +3688,18 @@ Build date: 2019-12-19 16:51:02
   }
   .title {
     font-size: 30px;
-    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 25px;
   }
 }
 
@@ -4407,7 +4418,7 @@ footer {
 
 @media (max-width: 320px) {
   .footer-top__nav {
-    margin-right: 35px;
+    margin-right: 20px;
   }
   .footer-bottom {
     -webkit-box-orient: vertical;

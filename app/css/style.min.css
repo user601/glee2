@@ -5947,6 +5947,17 @@ h6::before {
   }
   .title {
     font-size: 30px;
-    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .title {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 25px;
   }
 }

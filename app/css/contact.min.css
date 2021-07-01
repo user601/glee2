@@ -4402,7 +4402,7 @@ footer {
 
 @media (max-width: 320px) {
   .footer-top__nav {
-    margin-right: 35px;
+    margin-right: 20px;
   }
   .footer-bottom {
     -webkit-box-orient: vertical;

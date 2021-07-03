@@ -300,8 +300,6 @@ margin-bottom: 60px;
     margin-bottom: 60px;
     &__form{
       display: flex;
-      
-      
     }
     &__input{
      width: 222px;
@@ -403,4 +401,142 @@ margin-bottom: 60px;
       
     }
     
+  }
+ @media(max-width:1200px){
+  .blog-page{
+  &__img {
+    max-width: 780px;
+    height: 470px;
+  }
+  h4 {
+   
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+  &__content {
+   width: 800px;
+   margin-right: 10px;
+}
+ }
+}
+
+@media(max-width:1024px){
+  .blog-page{
+    &__img {
+      max-width: 690px;
+      height: 420px;
+  }
+ 
+  &__content {
+    width: 675px;
+  }
+  blockquote {
+    padding: 25px 10px 25px 40px; 
+    width: 675px; 
+    margin-bottom: 40px;
+  }
+ }
+ .person{
+   &__info-box {
+  margin-right: 250px;
+  }
+  &__img{
+    margin-right: 10px;
+  }
+  &__social-link {
+    margin-left: 5px;
+}
+ }
+}
+
+@media(max-width:768px){
+  .blog-page{
+    &__img {
+    max-width: 500px;
+    height: 320px;
+    margin-right: 5px;
+}
+    &__content {
+      width: 530px;
+}
+h4 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+h5 {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+blockquote {
+  padding: 9px 5px 25px 20px;
+  width: 500px;
+  margin-bottom: 30px;
+}
+p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  max-width: 500px;
+}
+    }
+    .category-search__input {
+      width: 170px;
+     
+  }
+  .person{
+    width: 760px;
+    padding-right: 20px;
+  } 
+  &__info-box {
+    margin-right: 320px;
+
+  }
+}
+
+
+  @media(max-width:730px){
+    
+    .category-filter{
+      display: none;
+    }
+    .category-search{
+        display: none;
+      }
+  }
+
+  @media(max-width:540px){
+    .blog-page{
+      h5 {
+        margin-right: 15px;
+    }
+      p{
+        margin-right: 10px;
+      }
+    }
+    
+    .person {
+      width: 530px;
+      padding-right: 5px;
+      &__info-box {
+        margin-right: 100px;
+    }
+  }
+  .comments__item--short {
+    margin-left: 0;
+}
+.comments-form{
+  &__textarea {
+  width: 520px;
+  background-position: 480px 17px;
+}
+&__box-input{
+  justify-content: center;
+  margin-left: -10px;
+}
+ &__input-name, &__input-mail { 
+  width: 260px;
+  padding: 0 25px 0 10px;
+  background-position: 235px 17px;
+}
+ }
   }

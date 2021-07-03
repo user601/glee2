@@ -125,6 +125,7 @@ footer{
   }
 }
 
+
 @media (max-width:1300px){
   .footer-top{
     padding: 79px 85px 74px;
@@ -190,41 +191,12 @@ footer{
 }
 }
 }
-@media (max-width: 700px){
-  .footer-top__nav {
-    margin-right: 50px;
-}
-}
-@media (max-width: 650px){
-  .footer-top__nav {
-    margin-right: 30px;
-}
-}
-@media (max-width: 600px){
-  .footer-top{
-    flex-wrap: wrap;
-    &__contacts{
-      width: 100%;
-    }
-    &__item-form{
-      width: 100%;
-      margin: 0 auto;
-    }
-    &__nav {
-      margin-right: 20px;
-  }
-    }
-  }
-  @media(max-width:390px){
-    
-    .footer-top{
 
-    &__nav {
-      margin-right: 30px;
-     }
-   }
-  }
-
+@media(max-width:1024px){
+  .footer-top__nav {
+    margin-right: 60px;
+}
+}
 @media (max-width: 768px){
   .footer-top {
     padding: 7px 10px 5px;
@@ -258,6 +230,66 @@ footer{
   }
 }
 }
+@media (max-width: 700px){
+  .footer-top__nav {
+    margin-right: 50px;
+}
+}
+@media (max-width: 650px){
+  .footer-top__nav {
+    margin-right: 30px;
+}
+}
+@media (max-width: 600px){
+  .footer-top{
+    flex-wrap: wrap;
+    &__contacts{
+      width: 100%;
+    }
+    &__item-form{
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__nav {
+      margin-right: 20px;
+  }
+    }
+  }
+
+  @media(max-width:540px){
+    .footer-top{
+     flex-direction: column;
+     &__list{
+       display: flex;
+       align-items: center;
+     }
+     &__item{
+      margin-right: 50px;
+     }
+     &__item-form {
+      width: 100%;
+      margin: 0;
+  }
+}
+    
+    
+    .footer-bottom{
+      &__copy{
+      font-size: 9px;
+    }
+   }
+  }
+  @media(max-width:390px){
+    
+    .footer-top{
+
+    &__nav {
+      margin-right: 30px;
+     }
+   }
+  }
+
+
 //////////////////////////iphone 7 plus ///////////////////////
 @media (max-width: 414px){
 

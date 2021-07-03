@@ -4380,6 +4380,9 @@ footer {
   .footer-top__nav {
     margin-right: 50px;
   }
+  .footer-top__item {
+    margin-right: 40px;
+  }
   .footer-top__item-form {
     width: 100%;
   }
@@ -5092,5 +5095,85 @@ h6::before {
     width: 260px;
     padding: 0 25px 0 10px;
     background-position: 235px 17px;
+  }
+}
+
+@media (max-width: 414px) {
+  .blog-page {
+    padding: 45px 0;
+  }
+  .blog-page__img {
+    max-width: 410px;
+    height: 240px;
+  }
+  .blog-page h4 {
+    font-size: 25px;
+  }
+  .blog-page h5 {
+    margin-right: 12px;
+  }
+  .blog-page h6 {
+    font-size: 14px;
+  }
+  .blog-page blockquote {
+    padding: 5px 5px 5px 15px;
+    width: 390px;
+    font-size: 12px;
+    line-height: 2;
+  }
+  .blog-page__img-info {
+    height: 38px;
+    margin-top: -38px;
+    padding: 11px 20px;
+  }
+  .blog-page__content {
+    width: 405px;
+  }
+  .blog-page p {
+    font-size: 12px;
+    max-width: 400px;
+    line-height: 1.9;
+  }
+  .person {
+    width: 400px;
+  }
+  .person__img {
+    margin-right: 5px;
+  }
+  .person__name {
+    font-size: 15px;
+  }
+  .person__tags {
+    margin-bottom: 5px;
+  }
+  .person__position {
+    font-size: 14px;
+  }
+  .person__tags, .person__social {
+    font-size: 15px;
+  }
+  .person__info-box {
+    margin-right: 20px;
+  }
+  .comments-form__btn {
+    padding: 15px 25px;
+    font-size: 12px;
+  }
+  .comments-form__textarea {
+    width: 390px;
+    background-position: 365px 17px;
+    margin-bottom: 20px;
+    padding: 10px 30px;
+  }
+  .comments-form__box-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0;
+  }
+  .comments-form__input-name, .comments-form__input-mail {
+    width: 390px;
+    background-position: 365px 17px;
   }
 }

@@ -4358,6 +4358,9 @@ footer {
   .footer-top__nav {
     margin-right: 50px;
   }
+  .footer-top__item {
+    margin-right: 40px;
+  }
   .footer-top__item-form {
     width: 100%;
   }

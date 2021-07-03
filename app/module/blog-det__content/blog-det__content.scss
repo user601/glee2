@@ -540,3 +540,81 @@ p {
 }
  }
   }
+@media(max-width:414px){
+  .blog-page{
+    padding: 45px 0;
+  &__img {
+    max-width: 410px;
+    height: 240px;
+}
+ h4 {
+  font-size: 25px;
+  }
+  h5 {
+    margin-right: 12px;
+}
+h6 {
+  font-size: 14px;
+}
+blockquote {
+  padding: 5px 5px 5px 15px;
+  width: 390px;
+  font-size: 12px;
+  line-height: 2;
+}
+  &__img-info {
+    height: 38px; 
+    margin-top: -38px;
+    padding: 11px 20px;
+}
+ &__content {
+  width: 405px;
+}
+p {
+  font-size: 12px;
+  max-width: 400px;
+  line-height: 1.9;
+}
+ }
+ .person{
+  width: 400px;
+   &__img {
+  margin-right: 5px;
+}
+ &__name {
+  font-size: 15px;
+   }
+   &__tags {
+    margin-bottom: 5px;
+}
+ &__position {
+  font-size: 14px;
+}
+&__tags, &__social {
+  font-size: 15px;
+}
+&__info-box {
+  margin-right: 20px;
+}
+ }
+ .comments-form{
+ &__btn {
+  padding: 15px 25px;
+  font-size: 12px;
+}
+ &__textarea {
+  width: 390px;
+  background-position: 365px 17px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+}
+&__box-input {
+  flex-direction: column;
+  margin-left: 0;
+}
+ &__input-name, &__input-mail {
+  width: 390px;
+  background-position: 365px 17px;
+}
+}
+ }

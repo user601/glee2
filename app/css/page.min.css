@@ -4361,6 +4361,9 @@ footer {
   .footer-top__item {
     margin-right: 40px;
   }
+  .footer-top__item:last-child {
+    margin-right: 0;
+  }
   .footer-top__item-form {
     width: 100%;
   }
@@ -4379,6 +4382,9 @@ footer {
 }
 
 @media (max-width: 375px) {
+  .footer-top {
+    margin: auto;
+  }
   .footer-top__contacts {
     width: 100%;
     margin: auto;
@@ -4399,6 +4405,9 @@ footer {
   .footer-top__item-form {
     width: 100%;
     margin-left: 5px;
+  }
+  .footer-top__item {
+    margin-right: 30px;
   }
   .footer-bottom__copy {
     font-size: 10px;
@@ -4424,6 +4433,10 @@ footer {
 
 @media (max-width: 320px) {
   .footer-top__nav {
+    margin: 0px;
+    font-size: 10px;
+  }
+  .footer-top__item {
     margin-right: 20px;
   }
   .footer-bottom {

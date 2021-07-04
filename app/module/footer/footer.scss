@@ -301,6 +301,9 @@ footer{
   }
   &__item{
     margin-right: 40px;
+    &:last-child{
+      margin-right: 0;
+    }
   }
   &__item-form{
     width: 100%;
@@ -322,6 +325,7 @@ footer{
 
 @media (max-width: 375px){
 .footer-top {
+  margin: auto;
  &__contacts {
   width: 100%;
   margin: auto;
@@ -343,6 +347,10 @@ footer{
   width: 100%;
   margin-left: 5px;
 }
+&__item{
+  margin-right: 30px;
+  
+  }
   }
   .footer-bottom{
     &__copy{
@@ -369,8 +377,12 @@ footer{
 @media (max-width: 320px){
   .footer-top{
     &__nav{
-      margin-right: 20px;
+      margin: 0px;
+      font-size: 10px;
     }
+    &__item {
+      margin-right: 20px;
+  }
   }
   .footer-bottom{
     flex-direction: column;

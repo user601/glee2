@@ -4383,6 +4383,9 @@ footer {
   .footer-top__item {
     margin-right: 40px;
   }
+  .footer-top__item:last-child {
+    margin-right: 0;
+  }
   .footer-top__item-form {
     width: 100%;
   }
@@ -4401,6 +4404,9 @@ footer {
 }
 
 @media (max-width: 375px) {
+  .footer-top {
+    margin: auto;
+  }
   .footer-top__contacts {
     width: 100%;
     margin: auto;
@@ -4421,6 +4427,9 @@ footer {
   .footer-top__item-form {
     width: 100%;
     margin-left: 5px;
+  }
+  .footer-top__item {
+    margin-right: 30px;
   }
   .footer-bottom__copy {
     font-size: 10px;
@@ -4446,6 +4455,10 @@ footer {
 
 @media (max-width: 320px) {
   .footer-top__nav {
+    margin: 0px;
+    font-size: 10px;
+  }
+  .footer-top__item {
     margin-right: 20px;
   }
   .footer-bottom {
@@ -5175,5 +5188,83 @@ h6::before {
   .comments-form__input-name, .comments-form__input-mail {
     width: 390px;
     background-position: 365px 17px;
+  }
+}
+
+@media (max-width: 375px) {
+  .blog-page h4 {
+    font-size: 23px;
+  }
+  .blog-page p {
+    max-width: 360px;
+  }
+  .blog-page__content {
+    max-width: 365px;
+  }
+  .blog-page__img {
+    max-width: 365px;
+    height: 210px;
+  }
+  .blog-page blockquote {
+    width: 365px;
+  }
+  .comments-form__textarea {
+    width: 355px;
+    background-position: 330px 10px;
+    margin-bottom: 20px;
+    padding: 8px 25px;
+  }
+  .comments-form__input-name, .comments-form__input-mail {
+    width: 355px;
+    background-position: 330px 20px;
+  }
+  .comments__item-img {
+    width: 80%;
+    height: 80%;
+    margin-right: 10px;
+  }
+  .person {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 365px;
+  }
+}
+
+@media (max-width: 320px) {
+  .blog-page h5 {
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    max-width: 310px;
+    padding-right: 10;
+  }
+  .blog-page h4 {
+    font-size: 18px;
+  }
+  .blog-page p {
+    max-width: 300px;
+    font-size: 10px;
+  }
+  .blog-page blockquote {
+    width: 310px;
+  }
+  .blog-page__left-img {
+    width: 90%;
+  }
+  .blog-page__img {
+    max-width: 299px;
+    height: 166px;
+  }
+  .person {
+    max-width: 310px;
+  }
+  .comments-form__input-name, .comments-form__input-mail, .comments-form__textarea {
+    max-width: 300px;
+    background-position: 275px 20px;
   }
 }

@@ -432,3 +432,83 @@
        }
      }
     
+     @media(max-width:768px){
+      .product-page{
+      &__btn {
+        padding: 20px 27px;
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+     &__price {
+      font-size: 30px;
+      margin: 20px 0 20px;
+  }
+  }
+  .product-tabs__top-item {
+    padding: 18px 50px;
+}
+
+       .product-slide{
+        &__show {
+          width: 300px;
+      }
+       &__content-text {
+        max-width: 720px;
+    }
+     &__content {
+      margin-bottom: 50px;
+  }
+       }
+       .product-related{
+       &__title {
+        margin: 0px;
+    }
+     &__card {
+      width: calc(100% / 2 - 30px);
+   } 
+   &__items {
+    flex-wrap: wrap;
+}
+     }
+     }
+     /* одного не могу понять почему я запустил у себя на айфоне 7+ и у меня все норм, а в инспекторе 
+     в браузере совсем не то */
+     @media(max-width:414px){
+       .product-page{
+         &__inner{
+           flex-direction: column;
+         }
+         &__text{
+           max-width: 370px;
+         }
+       }
+       .product-tabs{
+        padding-top: 10px;
+         &__top{
+          display: flex;
+          flex-direction: column;
+         }
+         &__content {
+          margin-bottom: 50px;
+        }
+         &__top-item {
+           margin-right: 0;
+          margin-bottom: 10px;
+      }
+    }
+       
+    .product-slide{
+     &__show img {
+      width: 230px;
+      height: 500px;
+  }
+  &__prewiev-item img {
+    width: 120px;
+    height: 140px;
+  }
+  &__prewiev {
+    width: 120px;
+    margin-right: 5px;
+ }
+       }
+     }

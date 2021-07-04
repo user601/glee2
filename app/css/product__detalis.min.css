@@ -5236,3 +5236,82 @@ footer {
 .product-related__card.product-related__card--active {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .product-page__btn {
+    padding: 20px 27px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+  }
+  .product-page__price {
+    font-size: 30px;
+    margin: 20px 0 20px;
+  }
+  .product-tabs__top-item {
+    padding: 18px 50px;
+  }
+  .product-slide__show {
+    width: 300px;
+  }
+  .product-slide__content-text {
+    max-width: 720px;
+  }
+  .product-slide__content {
+    margin-bottom: 50px;
+  }
+  .product-related__title {
+    margin: 0px;
+  }
+  .product-related__card {
+    width: calc(100% / 2 - 30px);
+  }
+  .product-related__items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* одного не могу понять почему я запустил у себя на айфоне 7+ и у меня все норм, а в инспекторе 
+     в браузере совсем не то */
+@media (max-width: 414px) {
+  .product-page__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-page__text {
+    max-width: 370px;
+  }
+  .product-tabs {
+    padding-top: 10px;
+  }
+  .product-tabs__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-tabs__content {
+    margin-bottom: 50px;
+  }
+  .product-tabs__top-item {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .product-slide__show img {
+    width: 230px;
+    height: 500px;
+  }
+  .product-slide__prewiev-item img {
+    width: 120px;
+    height: 140px;
+  }
+  .product-slide__prewiev {
+    width: 120px;
+    margin-right: 5px;
+  }
+}

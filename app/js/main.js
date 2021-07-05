@@ -57,7 +57,15 @@ $('.menu__btn, .menu__list-item a').on('click', function(){
     asNavFor: '.product-slide__prewiev',
     draggable: false,
     arrows: false,
-    fade: true
+    fade: true,
+    responsive:[
+      {
+        breakpoint:414,
+        setings:{
+          draggable:true,
+        }
+      },
+    ]
   });
 
   $('.category-price__input').ionRangeSlider({
@@ -108,9 +116,7 @@ $(".star").rateYo({
     };
     var mixer1 = mixitup(containerEl1, config);
     var mixer2 = mixitup(containerEl2, config);
-    /*(() => mixitup(containerEl1, config))();
-    (() => mixitup(containerEl2, config))();*/
-
+  
 
 
 

@@ -4677,6 +4677,9 @@ footer {
 }
 
 @media (max-width: 414px) {
+  .articles__title {
+    font-size: 25px;
+  }
   .articles__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4685,6 +4688,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .product-slide __prewiev-item {
+    display: none;
   }
 }
 
@@ -5237,6 +5243,13 @@ footer {
   display: block;
 }
 
+@media (max-width: 1000px) {
+  .product-page__btn {
+    padding: 20px 45px;
+    margin-left: 0px;
+  }
+}
+
 @media (max-width: 768px) {
   .product-page__btn {
     padding: 20px 27px;
@@ -5271,19 +5284,95 @@ footer {
   }
 }
 
-/* одного не могу понять почему я запустил у себя на айфоне 7+ и у меня все норм, а в инспекторе 
-     в браузере совсем не то */
-@media (max-width: 414px) {
+@media (max-width: 720px) {
   .product-page__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .product-tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .product-tabs__content-text {
+    max-width: 370px;
+  }
+  .product-tabs__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-tabs__top-item {
+    margin-right: 15;
+    margin-bottom: 10px;
+  }
+  .product-tabs__top-item:last-child {
+    margin-right: 12px;
+  }
+}
+
+@media (max-width: 740px) {
+  .product-tabs__top-item {
+    padding: 18px 35px;
+  }
+  .product-tabs__content-text {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-page__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-tabs__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .product-tabs__top-item {
+    padding: 18px 15px;
+    margin: 0 10 10px;
+  }
+  .product-tabs__content-text {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 414px) {
+  .product-detals {
+    padding: 0 0 20px;
+  }
+  .product-page__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+  }
   .product-page__text {
     max-width: 370px;
   }
+  .product-page__content {
+    max-width: 400px;
+  }
   .product-tabs {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-top: 10px;
   }
   .product-tabs__top {
@@ -5302,16 +5391,55 @@ footer {
     margin-right: 0;
     margin-bottom: 10px;
   }
-  .product-slide__show img {
-    width: 230px;
-    height: 500px;
+  .product-tabs__top-item:last-child {
+    margin-right: 0;
   }
-  .product-slide__prewiev-item img {
-    width: 120px;
-    height: 140px;
+  .product-slide {
+    max-width: 400px;
+    margin-right: 0;
   }
   .product-slide__prewiev {
-    width: 120px;
-    margin-right: 5px;
+    display: none;
+  }
+}
+
+@media (max-width: 375px) {
+  .product-page__btn {
+    font-size: 12px;
+  }
+  .product-page__title {
+    font-size: 35px;
+  }
+  .product-page__text {
+    max-width: 360px;
+  }
+  .product-page__content {
+    max-width: 360px;
+  }
+  .product-slide__show img {
+    width: 360px;
+    height: 500px;
+  }
+  .product-info__title, .product-info__text-link {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .product-related__tabs {
+    display: none;
+  }
+  .product-tabs__top {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 320px) {
+  .product-slide {
+    max-width: 300px;
+  }
+  .product-page__content {
+    max-width: 300px;
+  }
+  .product-page__box {
+    margin-bottom: 0px;
   }
 }

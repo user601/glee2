@@ -4672,6 +4672,9 @@ footer {
 }
 
 @media (max-width: 414px) {
+  .articles__title {
+    font-size: 25px;
+  }
   .articles__items {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4680,6 +4683,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .product-slide __prewiev-item {
+    display: none;
   }
 }
 

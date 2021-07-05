@@ -431,6 +431,16 @@
       display: block;
        }
      }
+
+     @media(max-width:1000px){
+      .product-page{
+      &__btn {
+        padding: 20px 45px;
+        margin-left: 0px;
+       
+     }
+      }
+     }
     
      @media(max-width:768px){
       .product-page{
@@ -471,18 +481,83 @@
 }
      }
      }
-     /* одного не могу понять почему я запустил у себя на айфоне 7+ и у меня все норм, а в инспекторе 
-     в браузере совсем не то */
+     @media(max-width:720px){
+      .product-page{
+        &__inner{
+          flex-direction: column;
+        }
+      }
+      .product-tabs{
+      display: flex;
+     &__content-text{
+      max-width: 370px;
+     }
+      &__top{
+        display: flex;
+        flex-direction: column;
+      }
+      &__top-item {
+        margin-right: 15;
+        margin-bottom: 10px;
+        &:last-child{
+          margin-right: 12px;
+        }
+    }
+     }
+     }
+     @media(max-width:740px){
+      .product-tabs{
+        &__top-item {
+          padding: 18px 35px;
+      }
+      &__content-text {
+        max-width: 700px;
+      }
+     }
+    }
+
+     @media(max-width:560px){
+      .product-page{
+
+      &__inner{
+        flex-direction: column;
+      }
+     }
+     .product-tabs{
+     &__top{
+      display: flex;
+      flex-direction: column;
+     }
+     &__top-item{
+       padding: 18px 15px;
+      margin: 0 10 10px;
+     }
+     &__content-text{
+       max-width: 300px;
+     }
+    }
+    }
+     
+     
      @media(max-width:414px){
+       .product-detals{
+         padding: 0 0 20px;
+       }
        .product-page{
          &__inner{
            flex-direction: column;
+           margin-right: 0;
          }
          &__text{
            max-width: 370px;
          }
+         &__content{
+           max-width: 400px;
+         }
        }
+       
        .product-tabs{
+         flex-direction: column;
         padding-top: 10px;
          &__top{
           display: flex;
@@ -494,21 +569,65 @@
          &__top-item {
            margin-right: 0;
           margin-bottom: 10px;
+          &:last-child{
+            margin-right: 0;
+          }
       }
-    }
-       
+    }   
     .product-slide{
-     &__show img {
-      width: 230px;
-      height: 500px;
-  }
-  &__prewiev-item img {
-    width: 120px;
-    height: 140px;
-  }
-  &__prewiev {
-    width: 120px;
-    margin-right: 5px;
- }
+      max-width: 400px;
+      margin-right: 0;
+      &__prewiev{
+     display: none;
+    }
+  } 
+   }
+    @media(max-width:375px){
+      .product-page{
+        &__btn {
+          font-size: 12px;
+        }
+        &__title{
+          font-size: 35px;
+        }
+        &__text {
+          max-width: 360px;
+        }
+        &__content {
+          max-width: 360px;
+      }
+      }
+      .product-slide{
+        &__show img {
+        width: 360px;
+        height: 500px;
+        }
+    }
+      .product-info__title, .product-info__text-link {
+       
+        font-size: 15px;
+        line-height: 20px;
+    }
+     .product-related__tabs{
+         display: none;
        }
+       .product-tabs{
+         &__top {
+        font-size: 15px;
+         }
+    }
+    }
+
+    @media(max-width:320px){
+      .product-slide {
+        max-width: 300px;
+    }
+    .product-page{
+     &__content {
+      max-width: 300px;
      }
+     &__box {
+      margin-bottom: 0px;
+     }
+  }
+    }

@@ -288,3 +288,34 @@ align-items: center;
   border-left: none;
  }
 }
+
+@media(max-width:1200px){
+  .category {
+    width: 250px;
+    margin-right: 70px;
+
+}
+}
+
+@media(max-width:1200px){
+  .category {
+    width: 250px;
+    margin-right: 60px;
+
+}
+}
+@media(max-width:800px){
+  .category {
+    width: 250px;
+    margin-right: 40px;
+}
+.category-filter {
+  width: 250px;
+ }
+}
+
+@media(max-width:580px){
+  .category {
+    display: none;
+ }
+}

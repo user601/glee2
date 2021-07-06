@@ -738,14 +738,20 @@
   background-color:#ffff;
   padding-top: 120px;
   &__inner{
-    display: flex;
+    display: flex;}
    /*flex-wrap: wrap;
    justify-content: center;*/
+   &__filter-button{
+     display: none;
+   }
   }
-}
+  
 .category{
- 
+ /* &__filter-button{
+    display: none;
+   }*/
   width: 270px;
+  
 
 }
 .category-search{
@@ -800,9 +806,12 @@
      margin-bottom: 12px;
     }
   }
- 
+  
   .category-filter{
     width: 270px;
+    &__btn{
+      display: none;
+    }
    
   &__form{
     margin-bottom: 70px;
